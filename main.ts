@@ -28,6 +28,7 @@ if (!response.ok) {
 }
 
 const result: string = await response.text();
+const doc = new DOMParser().parseFromString(result, "text/html");
 
 const trends = doc.querySelectorAll("div.css-1dbjc4n span");
   trends.forEach((trend) => {
