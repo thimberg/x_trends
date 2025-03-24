@@ -9,9 +9,6 @@ import { ensureDir } from "std/fs/mod.ts";
 import type { SearchWord, TopSearch } from "./types.ts";
 import { createArchive, createReadme, mergeWords } from "./utils.ts";
 
-// Twitter APIの認証情報
-const BEARER_TOKEN = 'YOUR_BEARER_TOKEN'; // Twitter Developer Portalから取得した
-
 // トレンドデータを取得する場所のWOEID（例: 日本の場合は23424856）
 const WOEID = 23424856;
 
