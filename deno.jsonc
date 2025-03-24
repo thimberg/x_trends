@@ -7,9 +7,10 @@
     "std/": "https://deno.land/std@0.79.0/"
   },
   "fmt": {
-    "options": {
-      "lineWidth": 120
-    }
+    "useTabs": false,
+    "singleQuote": false,
+    "proseWrap": "preserve",
+    "lineWidth": 120
   },
   "lock": false
 }
