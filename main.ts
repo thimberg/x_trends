@@ -31,9 +31,9 @@ const result: string = await response.text();
 const doc = new DOMParser().parseFromString(result, "text/html");
 
 const trends = doc.querySelectorAll("div.css-1dbjc4n span");
-  trends.forEach((trend) => {
-    console.log(trend.textContent);
-  });
+trends.forEach((trend) => {
+  console.log(trend.textContent);
+});
 
 const words: SearchWord[] = [];
 result.data.forEach((item) => {
