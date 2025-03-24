@@ -10,7 +10,7 @@ import type { SearchWord, TopSearch } from "./types.ts";
 import { createArchive, createReadme, mergeWords } from "./utils.ts";
 
 // トレンドデータを取得する場所のWOEID（例: 日本の場合は23424856）
-const WOEID = 23424856;
+// const WOEID = 23424856;
 
 // APIエンドポイント
 const url = "https://twitter.com/explore/tabs/trending";
@@ -36,7 +36,7 @@ trends.forEach((trend) => {
 });
 
 const words: SearchWord[] = [];
-result.data.forEach((item) => {
+trends.forEach((item) => {
   const title = item.target.title;
   const url = item.target.url;
 
