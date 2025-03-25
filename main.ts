@@ -23,6 +23,7 @@ const headers = {
 const response = await fetch(url, { headers });
 
 if (!response.ok) {
+  console.error("ERROR!... アクセスエラー");
   console.error(response.statusText);
   Deno.exit(-1);
 }
